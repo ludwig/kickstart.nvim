@@ -14,6 +14,7 @@ end
 vim.pack.add(plugins)
 
 vim.keymap.set('n', '\\', '<Cmd>Neotree reveal<CR>', { desc = 'NeoTree reveal', silent = true })
+vim.keymap.set('n', '<Leader>n', '<Cmd>Neotree toggle<CR>', { desc = 'NeoTree toggle' })
 
 require('neo-tree').setup {
   filesystem = {
